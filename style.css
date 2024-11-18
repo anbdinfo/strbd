@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-toggler{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    border: 1px solid white !important;
+}
+.fwid{
+    width: 500px !important;
+}
+.offer-text-head{
+    margin: 0;
+    font-weight: normal;
+    font-size: 15px;
+}
+.offer-text{
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0;
+    white-space: nowrap;
+}
+.nav-link{
+    color: gray !important;
+}
+.nav-link:hover{
+    color: blue !important;
+}
+.bg-header-color{
+    background-color: #F2F4F8;
+}
+.header-box{
+    /* width: 300px;
+    height: 193px; */
+    background-color: #FFE8A1;
+}
+.icon-size{
+    font-size: 25px;
+}
+.footer-bg-color{
+    background-color: #081621;
+}
+.icon-size{
+    font-size: 25px;
+    color: white;
+}
+.card-hover:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0px;
+    padding: 0px;
+    transition: 0.5s;
+}
+.form-control-2{
+    width: 350px !important;
+}
+.bg-product-details{
+    background-color: #F5F5FC;
+}
+.view-more{
+    display: inline-block;
+    color: red;
+    border-bottom: 1px solid red;
+}

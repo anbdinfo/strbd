@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <!-- Navbar start -->
+    <nav class="sticky-top">
+      <nav class="navbar-expand-lg navbar bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <a class="navbar-brand" href="#"><img class="w-75" src="logo.png" alt=""></a>
+          <form class="d-flex position-relative me-auto d-none d-lg-block fwid" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <i class="bi bi-search text-primary position-absolute top-50 end-0 d-block translate-middle"></i>
+          </form>
+          <i class="bi bi-gift-fill text-warning px-3 d-none d-lg-block"></i>
+          <div class=" d-none d-lg-block me-5">
+            <p class="text-white  offer-text-head ">Offer</p>
+            <p class="text-white offer-text">Latest Offer</p>
+          </div>
+          <i class="bi bi-lightning-charge-fill text-warning px-3 d-none d-lg-block"></i>
+          <div class=" d-none d-lg-block me-5">
+            <p class="text-white  offer-text-head ">11.11</p>
+            <p class="text-white offer-text">Special Deals</p>
+          </div>
+          <i class="bi bi-person-fill text-warning px-3 d-none d-lg-block"></i>
+          <div class=" d-none d-lg-block me-5">
+            <p class="text-white  offer-text-head ">Account</p>
+            <p class="text-white offer-text">Register or Login</p>
+          </div>
+          <button class="btn btn-primary">Pc Builder</button>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ulLink">
+
+        </ul>
+      </div>
+      </div>
+      <div class="navbar navbar-expand-md d-none d-lg-block bg-white" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center justify-content-center align-items-center" id="ulListLink">
+      
+        </ul>
+      </div>
+    </nav>
+  <!-- Navbar end -->
+
+  <!-- Header start -->
+    <header class="bg-header-color py-4 container-fluid">
+      <div class="row align-items-center">
+            <div class="col-lg-9">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img class="d-block w-100" src="image/carosul-1.webp" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-100" src="image/carosul-2.webp" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+      </div>
+            <div class="col-lg-3" >
+              <div class="header-box text-center">
+                <p class="fw-bold offer-text-head mt-4 pt-3">Compare Products</p>
+                <p class="offer-text">Choose Two Products to Compare</p>
+                <form class="d-inline-block justify-content-center align-items-center my-3" role="search">
+                <input class="form-control" type="search" placeholder="Product Search" aria-label="Search"><br>
+                <input class="form-control" type="search" placeholder="Cetagory Search" aria-label="Search">
+                </form>
+                <div class="">
+                  <button class="btn btn-outline-primary my-3 text-center">View Comparison</button>
+                </div>
+              </div>
+              
+              <div class="my-4">
+                  <img class="img-fluid w-100" src="image/carosul-ads.webp" alt="">
+              </div>
+            </div>
+        </div>
+    </header>
+  <!-- Header end -->
+
+  <!-- Banner Area Start -->
+   <div class="container-fluid">
+    <section class="container bg-primary rounded-4 ">
+      <div class="row align-items-center  p-4">
+        <div class="col-md-6">
+          <div>
+            <h1 class="text-white">20+ Physical Stores</h1>
+            <h5 class="text-white">Visit Our Store & Get Your Desired IT Product!</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+         <div>
+          <form class="position-relative" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <i class="bi bi-search text-primary position-absolute top-50 end-0 d-block translate-middle"></i>
+          </form>
+         </div>
+        </div>
+      </div>
+     </section>
+   </div>
+  <!-- Banner Area End -->
+
+   <!-- Product Area Start -->
+    <div class="text-center mt-5">
+      <h6>Featured Products</h6>
+      <p>Check & Get Your Desired Product!</p>
+    </div>
+   <div class="container-fluid">
+    <div  class="product-area">
+      <div class="row" id="productCard">
+        
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <button class="btn btn-outline-primary text-center">More Porduct</button>
+      </div>
+    </div>
+    
+   <!-- Product Area End -->
+
+   <!-- Description Area Start -->
+    <section class="bg-header-color mt-5 pt-4">
+      <h6 class="pb-2 ps-4">Leading Computer, Laptop & Gaming PC Retail & Online Shop in Bangladesh</h6>
+      <p class="pb-2 ps-4">Technology has become a part of our daily lives, and we depend on tech products daily for a vast portion of our lives. There is hardly a home in Bangladesh without a tech product. This is where we come in. Star Tech Ltd. started as a Tech Product Shop in March 2007. We focus on giving the best customer service in Bangladesh, following our motto of “Customer Comes First.” This is why Star Tech is the most trusted computer shop in Bangladesh today, capturing the loyalty of a large customer base. After a long 16-year journey, Star Tech Ltd. was certified with the renowned "ISO 9001:2015 certification" as a recognition for the best Quality Control Management System. As an ISO-certified organization, Star Tech Ltd. is now up to the international standards that specify a Quality Management System (QMS). This Certification denotes that the organization strictly maintains all sorts of regulatory requirements to provide customers with products and services of a global standard.</p>
+      <h6 class="pb-2 ps-4">Best Laptop Shop in Bangladesh</h6>
+      <p class="pb-2 ps-4">Star Tech has the most comprehensive array of Desktop PCs. We offer top-of-the-line Custom PC, Brand PC, All-in-One PC, and Portable Mini PC at Star Tech outlets, the best Desktop PC shop in Bangladesh, which are spread nationwide. Get your new iMac Desktop or Apple Mac Mini with an international warranty and servicing plan. You can always depend on the Star Tech PC shop experts to build the best desktop PC or computer with parts of your choice. Star Tech is Bangladesh's most reliable repair shop for PC, laptops, & other consumer electronics. Take your gaming or professional content creation to the next level with a large collection of high-end Gaming PC and Editing PC from Star Tech. You can build a complete personal computer with the best desktop PC parts picked by you with our PC Builder feature. The features let you pick PC parts to buy the best desktop PC anytime. Or, you can visit any Star Tech custom PC shop near you to build the best Desktop PC according to your taste, live, and in front of you.</p>
+    </section>
+   <!-- Description Area End -->
+
+   <!-- Footer Area Start -->
+   <div class="container-fluid">
+    <div class="row footer-bg-color">
+      <div class="col-md 3 ps-5">
+        <h6 class="text-white pt-4">About Us</h6>
+        <div>
+          <p class=""><a class="text-decoration-none text-secondary" href="#">Affiliate Program</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Online Delivery</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Refund and Return Policy</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Blog</a></p>
+        </div>
+      </div>
+      <div class="col-md 3 ps-5 pt-4"><br>
+        <div>
+          <p><a class="text-decoration-none text-secondary" href="#">Affiliate Program</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Online Delivery</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Refund and Return Policy</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Blog</a></p>
+        </div>
+      </div>
+      <div class="col-md 3 ps-5 pt-4">
+        <br>
+        <div>
+          <p><a class="text-decoration-none text-secondary" href="#">Affiliate Program</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Online Delivery</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Refund and Return Policy</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Blog</a></p>
+        </div>
+      </div>
+      <div class="col-md 3 ps-5 pt-4">
+        <br>
+        <div>
+          <p><a class="text-decoration-none text-secondary" href="#">Affiliate Program</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Online Delivery</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Refund and Return Policy</a></p>
+          <p><a class="text-decoration-none text-secondary" href="#">Blog</a></p>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between ps-5">
+        <div class="content d-flex align-items-center">
+          <p class="text-secondary">Experience Star Tech App on your mobile:</p>
+          <p><a href="#"><i class="bi bi-google-play icon-size ms-3"></i></a></p>
+        </div>
+        <div class="socila-midea d-flex align-items-center pe-5">
+          <p><a href="#"><i class="bi bi-whatsapp icon-size mx-4"></i></a></p>
+          <p><a href="#"><i class="bi bi-youtube icon-size"></i></a></p>
+          <p><a href="#"><i class="bi bi-facebook icon-size mx-4"></i></a></p>
+          <p><a href="#"><i class="bi bi-instagram icon-size"></i></a></p>
+        </div>
+      </div>
+      <hr>
+      <p class="text-white text-center offer-text mb-2">© 2024 Star Tech Ltd | All rights reserved</p>
+    </div>
+   </div>
+   <!-- Footer Area End -->
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- JS Link -->
+     <script src="index.js"></script>
+</body>
+</html>
